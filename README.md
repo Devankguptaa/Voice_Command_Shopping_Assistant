@@ -94,10 +94,6 @@ Voice_Command_Shopping_Assistant/
 - Recipe/meal planning  
 - Shared lists with family  
 
----
-
-## 📄 License
-This project is released under the **MIT License**.
 
 ---
 
