@@ -49,7 +49,7 @@ Render provides free HTTPS hosting, automatic redeploys from Git, and a global C
 
 ## 📂 Project Structure
 ```
-voice-assistant/
+Voice_Command_Shopping_Assistant/
 ├── index.html     # Main HTML
 ├── styles.css     # Styling
 ├── script.js      # App logic
