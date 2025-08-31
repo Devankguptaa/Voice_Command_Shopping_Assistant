@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Command Shopping Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-shell">
+        <header>
+            <h1>🛒 Voice Shopping Assistant</h1>
+            <p class="tagLine">Speak your shopping needs, we'll handle the rest!</p>
+            <div class="locale-picker">
+                <select id="locale-select">
+                    <option value="en-US">English (US)</option>
+                    <option value="es-ES">Español</option>
+                    <option value="fr-FR">Français</option>
+                    <option value="de-DE">Deutsch</option>
+                    <option value="hi-IN">हिंदी</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="voice-panel">
+            <button id="btn-voice" class="voice-toggle">
+                <span class="icon-mic">🎤</span>
+                <span class="label-mic">Click to Speak</span>
+            </button>
+            <div id="voice-status" class="voice-status">Ready to listen</div>
+            <div class="dev-tools">
+                <button id="btn-mic-test" class="dev-btn">Test Microphone</button>
+                <button id="btn-devinfo" class="dev-btn">Debug Info</button>
+                <button id="btn-voice-retry" class="dev-btn retry-btn" style="display: none;">🔄 Retry Voice</button>
+                <button id="btn-cmd-test" class="dev-btn">Test Command Processing</button>
+                <div class="help-hints">
+                    <p><strong>Voice not working?</strong></p>
+                    <ul>
+                        <li>Use Chrome or Edge browser</li>
+                        <li>Allow microphone access when prompted</li>
+                        <li>Speak clearly and wait for "Listening..."</li>
+                        <li>Check browser console for errors</li>
+                        <li>Ensure stable internet connection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-grid">
+            <div class="list-pane">
+                <h2>📝 Shopping List</h2>
+                <div id="list-holder" class="list-holder">
+                    <div class="is-empty">Your shopping list is empty. Try saying "add milk" or "add 2 apples"</div>
+                </div>
+            </div>
+
+            <div class="tips-pane">
+                <h2>💡 Smart Suggestions</h2>
+                <div id="tips-list" class="tips-list">
+                    <div class="tip-card">
+                        <span class="tip-icon">🌞</span>
+                        <span class="tip-text">Summer essentials: watermelon, ice cream</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lookup-pane">
+                <h2>🔍 Product Search</h2>
+                <div class="lookup-controls">
+                    <input type="text" id="lookup-input" placeholder="Type to search or say 'find milk'">
+                    <button id="lookup-btn">Search</button>
+                </div>
+                <div id="lookup-results" class="lookup-results"></div>
+            </div>
+        </div>
+
+        <div class="commands-pane">
+            <h3>🎯 Voice Commands</h3>
+            <div class="cmds-grid">
+                <div class="cmd-card">
+                    <strong>Add items:</strong> "add milk", "add 2 apples", "buy bread", "need eggs"
+                </div>
+                <div class="cmd-card">
+                    <strong>Multilingual:</strong> "añadir leche" (Spanish), "acheter lait" (French)
+                </div>
+                <div class="cmd-card">
+                    <strong>Remove items:</strong> "remove milk", "delete apples", "eliminar leche"
+                </div>
+                <div class="cmd-card">
+                    <strong>Search:</strong> "find milk", "search for bread", "buscar leche"
+                </div>
+                <div class="cmd-card">
+                    <strong>Manage list:</strong> "clear list", "empty list", "limpiar lista"
+                </div>
+                <div class="cmd-card">
+                    <strong>Get help:</strong> "help", "ayuda" (Spanish)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
