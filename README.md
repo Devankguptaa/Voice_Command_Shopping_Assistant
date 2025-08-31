@@ -31,12 +31,10 @@ No frameworks or backend needed — it runs fully in your browser.
 3. Allow microphone access.
 4. Start speaking commands!
 
-### Deploy Online
-This app works as a **static site**. You can deploy on:
-- [Render](https://render.com/)  
-- [Vercel](https://vercel.com/)  
-- [Netlify](https://www.netlify.com/)  
-- GitHub Pages  
+### Live Deployment
+This app is deployed as a static site on Render.
+🔗 Live Demo: https://voice-command-shopping-assistant-7htr.onrender.com
+Render provides free HTTPS hosting, automatic redeploys from Git, and a global CDN for fast access.
 
 ---
 
