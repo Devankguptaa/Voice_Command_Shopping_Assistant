@@ -34,6 +34,7 @@ No frameworks or backend needed — it runs fully in your browser.
 ### Live Deployment
 This app is deployed as a static site on Render.
 🔗 Live Demo: https://voice-command-shopping-assistant-7htr.onrender.com
+
 Render provides free HTTPS hosting, automatic redeploys from Git, and a global CDN for fast access.
 
 ---
