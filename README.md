@@ -25,8 +25,7 @@ No frameworks or backend needed — it runs fully in your browser.
 ### Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Devankguptaa/Voice_Command_Shopping_Assistant
-.git
+   git clone https://github.com/Devankguptaa/Voice_Command_Shopping_Assistant.git
    ```
 2. Open `index.html` in **Chrome** or **Edge**.
 3. Allow microphone access.
